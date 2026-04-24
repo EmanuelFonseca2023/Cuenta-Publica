@@ -21,7 +21,7 @@
 
   interface Props {
     gastos: {
-      inversion?:      GastoItem;  // ✅ opcionales — algunos periodos no los tienen
+      inversion?:      GastoItem;
       funcionamiento?: GastoItem;
       deuda?:          GastoItem;
     };
@@ -29,13 +29,12 @@
 
   let { gastos }: Props = $props();
 
-  // Solo incluir en el chart los rubros que realmente existen en el periodo
   let chartData = $derived(() => {
     const entries: { label: string; pct: number; color: string }[] = [
       { label: 'Inversión Social', pct: gastos.inversion?.pct     ?? 0, color: '#059669' },
       { label: 'Funcionamiento',   pct: gastos.funcionamiento?.pct ?? 0, color: '#1e3a8a' },
       { label: 'Pago de Deudas',   pct: gastos.deuda?.pct          ?? 0, color: '#d97706' },
-    ].filter(e => e.pct > 0); // omitir rubros vacíos
+    ].filter(e => e.pct > 0);
 
     return {
       labels: entries.map(e => e.label),

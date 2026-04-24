@@ -16,14 +16,11 @@
 
   let keys = $derived(Object.keys(data.periodos).sort());
 
-  // ✅ untrack: le dice a Svelte que sabemos que esto solo corre una vez
-  // data es un prop estático que no cambia en runtime
   let periodoActual = $state(untrack(() => Object.keys(data.periodos).sort().at(-1) ?? ''));
 
   let periodo = $derived(periodoActual ? data.periodos[periodoActual] : null);
 </script>
 
-<!-- ── Selector sticky ─────────────────────────────────────────── -->
 <div class="sticky-blur bg-navy/95 py-4 px-4 shadow-md border-b border-white/10 mb-10">
   <div class="max-w-7xl w-full mx-auto flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
     <span class="text-blue-100 text-sm md:text-base font-medium whitespace-nowrap">
@@ -44,11 +41,9 @@
   </div>
 </div>
 
-<!-- ── Secciones ───────────────────────────────────────────────── -->
 {#if periodo}
 <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-24 flex flex-col gap-10">
 
-  <!-- Ingresos -->
   {#if periodo.ingresos}
     <section class="bg-white rounded-3xl shadow-sm border border-slate-100 overflow-hidden">
       <div class="grid grid-cols-1 lg:grid-cols-2">
@@ -65,7 +60,6 @@
           <IngresosChart ingresos={periodo.ingresos} />
         </div>
 
-        <!-- Leyenda dinámica desde items -->
         <div class="p-6 lg:p-10 bg-slate-50/30 flex flex-col justify-center space-y-4">
           {#each periodo.ingresos.items as item}
             {@const esNoTrib  = item.categoria.toLowerCase().includes('no tributario')}
@@ -90,7 +84,6 @@
     </section>
   {/if}
 
-  <!-- Gastos -->
   {#if periodo.gastos}
     <section class="bg-white rounded-3xl shadow-sm border border-slate-100 overflow-hidden">
       <div class="grid grid-cols-1 lg:grid-cols-2">

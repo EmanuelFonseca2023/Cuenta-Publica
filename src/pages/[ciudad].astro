@@ -6,7 +6,6 @@ import Dashboard from '../components/Dashboard.svelte';
 import bucaramangaData from '../data/bucaramanga.json';
 
 export function getStaticPaths() {
-  // ✅ CIUDADES debe vivir AQUÍ adentro (o ser importado a nivel de módulo)
   const CIUDADES = {
     bucaramanga: {
       data:         bucaramangaData,
@@ -18,11 +17,10 @@ export function getStaticPaths() {
 
   return Object.entries(CIUDADES).map(([slug, meta]) => ({
     params: { ciudad: slug },
-    props:  { meta },          // ← pasas el objeto completo como prop
+    props:  { meta },
   }));
 }
 
-// ✅ Ahora recibes `meta` desde props, no desde CIUDADES
 const { meta } = Astro.props;
 ---
 

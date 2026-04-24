@@ -2,7 +2,6 @@
   let abierto = $state(false);
 </script>
 
-<!-- Botón flotante -->
 <button
   onclick={() => abierto = true}
   class="fixed bottom-6 right-5 bg-navy hover:bg-blue-800 text-white rounded-full pl-4 pr-5 py-3
@@ -16,25 +15,21 @@
   Origen de los datos
 </button>
 
-<!-- Overlay + modal -->
 {#if abierto}
   <div
     role="presentation"
     onclick={() => abierto = false}
     class="fixed inset-0 bg-slate-900/60 z-50 flex items-end sm:items-center justify-center p-4 backdrop-blur-sm animate-fade-in"
   >
-    <!-- ✅ <dialog> nativo — no necesita role, tabindex ni onkeydown manuales -->
     <dialog
       open
       aria-labelledby="modal-titulo"
       onclick={(e) => e.stopPropagation()}
       class="bg-white rounded-3xl shadow-2xl max-w-md w-full p-8 relative animate-fade-up m-0 border-0"
     >
-      <!-- ... contenido igual ... -->
       <h3 id="modal-titulo" class="text-xl font-bold text-navy">
         De dónde vienen los datos
       </h3>
-      <!-- ... -->
     </dialog>
   </div>
 {/if}
