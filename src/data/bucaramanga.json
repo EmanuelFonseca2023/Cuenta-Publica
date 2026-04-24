@@ -1,0 +1,1227 @@
+{
+  "ciudad": "bucaramanga",
+  "periodos": {
+    "2021-1": {
+      "ingresos": null,
+      "gastos": {
+        "inversion": {
+          "pct": 70.59,
+          "eficacia_pct": 26.78,
+          "presupuesto_B": 1007.34,
+          "pagos_B": 269.74
+        },
+        "deuda": {
+          "pct": 4.92,
+          "eficacia_pct": 29.15,
+          "presupuesto_B": 64.44,
+          "pagos_B": 18.78
+        },
+        "funcionamiento": {
+          "pct": 24.49,
+          "eficacia_pct": 51.66,
+          "presupuesto_B": 181.17,
+          "pagos_B": 93.6
+        }
+      },
+      "obras": {
+        "items": [
+          {
+            "nombre": "RECURSOS DEL CREDITO 273",
+            "asignada_millones": 90741.0,
+            "girada_millones": 0.0,
+            "avance_pct": 0.0,
+            "sin_movimiento": true
+          },
+          {
+            "nombre": "RECURSOS DE CREDITO 273",
+            "asignada_millones": 41259.0,
+            "girada_millones": 0.0,
+            "avance_pct": 0.0,
+            "sin_movimiento": true
+          },
+          {
+            "nombre": "IMPUESTO DE ALUMBRADO PUBLICO VIGENCIA ANTERIOR 526",
+            "asignada_millones": 29947.7,
+            "girada_millones": 0.0,
+            "avance_pct": 0.0,
+            "sin_movimiento": true
+          },
+          {
+            "nombre": "SALDO CUENTA MAESTRA SALUD REGIMEN SUBSIDIADO VIGENCIA ANTERIOR 274",
+            "asignada_millones": 29403.5,
+            "girada_millones": 691.3,
+            "avance_pct": 2.35,
+            "sin_movimiento": false
+          },
+          {
+            "nombre": "RECURSOS PROPIOS VIGENCIA ANTERIOR 501",
+            "asignada_millones": 21602.3,
+            "girada_millones": 0.0,
+            "avance_pct": 0.0,
+            "sin_movimiento": true
+          }
+        ],
+        "total_proyectos": 10,
+        "sin_movimiento_count": 5,
+        "pct_sin_movimiento": 50.0,
+        "analisis": null
+      },
+      "proveedores": {
+        "items": [
+          {
+            "servicio": "FONPET VIGENCIA EXPIRADA",
+            "facturado_millones": 124.6,
+            "pagado_millones": 0.0,
+            "deuda_millones": 124.6,
+            "mora_pct": 100.0
+          },
+          {
+            "servicio": "CONTRIBUCION 5% CONTRATOS DE OBRA PUBLICA VIGENCIA ANTERIOR  504",
+            "facturado_millones": 53.5,
+            "pagado_millones": 3.6,
+            "deuda_millones": 49.9,
+            "mora_pct": 93.3
+          },
+          {
+            "servicio": "SGP EDUCACION CALIDAD VIGENCIA EXPIRADA",
+            "facturado_millones": 33.3,
+            "pagado_millones": 0.0,
+            "deuda_millones": 33.3,
+            "mora_pct": 100.0
+          },
+          {
+            "servicio": "REINTEGROS SGP EDUCACION PRESTACION DE SERVICIOS 277",
+            "facturado_millones": 39.2,
+            "pagado_millones": 15.9,
+            "deuda_millones": 23.3,
+            "mora_pct": 59.5
+          },
+          {
+            "servicio": "RECUROS COLJUEGOS VIGENCIA ANTERIOR 585",
+            "facturado_millones": 15.0,
+            "pagado_millones": 4.2,
+            "deuda_millones": 10.8,
+            "mora_pct": 72.2
+          }
+        ],
+        "total_deuda_top5_millones": 241.9,
+        "total_registros_con_mora": 5,
+        "analisis": null
+      }
+    },
+    "2021-2": {
+      "ingresos": null,
+      "gastos": {
+        "deuda": {
+          "pct": 3.47,
+          "eficacia_pct": 76.83,
+          "presupuesto_B": 41.6,
+          "pagos_B": 31.96
+        },
+        "inversion": {
+          "pct": 78.07,
+          "eficacia_pct": 68.6,
+          "presupuesto_B": 1046.82,
+          "pagos_B": 718.16
+        },
+        "funcionamiento": {
+          "pct": 18.46,
+          "eficacia_pct": 89.43,
+          "presupuesto_B": 189.85,
+          "pagos_B": 169.79
+        }
+      },
+      "obras": {
+        "items": [
+          {
+            "nombre": "RECURSOS DEL CREDITO 273",
+            "asignada_millones": 95206.7,
+            "girada_millones": 8831.5,
+            "avance_pct": 9.28,
+            "sin_movimiento": false
+          },
+          {
+            "nombre": "SALDO CUENTA MAESTRA SALUD REGIMEN SUBSIDIADO VIGENCIA ANTERIOR 274",
+            "asignada_millones": 29403.5,
+            "girada_millones": 3928.5,
+            "avance_pct": 13.36,
+            "sin_movimiento": false
+          },
+          {
+            "nombre": "CONTRIBUCION 5% CONTRATOS DE OBRA PUBLICA VIGENCIA ANTERIOR 504",
+            "asignada_millones": 6514.8,
+            "girada_millones": 0.0,
+            "avance_pct": 0.0,
+            "sin_movimiento": true
+          },
+          {
+            "nombre": "CONTRIBUCIÓN DE VALORIZACIÓN VIGENCIA ANTERIOR 530",
+            "asignada_millones": 3208.9,
+            "girada_millones": 0.0,
+            "avance_pct": 0.0,
+            "sin_movimiento": true
+          },
+          {
+            "nombre": "SALDO CUENTA MAESTRA SALUD PRESTACION SERVICIO VIGENCIA ANTERIOR 275",
+            "asignada_millones": 2438.4,
+            "girada_millones": 51.7,
+            "avance_pct": 2.12,
+            "sin_movimiento": false
+          }
+        ],
+        "total_proyectos": 10,
+        "sin_movimiento_count": 6,
+        "pct_sin_movimiento": 60.0,
+        "analisis": null
+      },
+      "proveedores": {
+        "items": [
+          {
+            "servicio": "CONTRIBUCION 5% CONTRATOS OBRA PUBLICA VIGENCIA ANTERIOR 504",
+            "facturado_millones": 434.2,
+            "pagado_millones": 0.0,
+            "deuda_millones": 434.2,
+            "mora_pct": 100.0
+          },
+          {
+            "servicio": "CONTRIBUCION 5% CONTRATOS DE OBRA PUBLICA VIGENCIA ANTERIOR 504",
+            "facturado_millones": 416.9,
+            "pagado_millones": 0.0,
+            "deuda_millones": 416.9,
+            "mora_pct": 100.0
+          },
+          {
+            "servicio": "RECURSOS PROPIOS  201",
+            "facturado_millones": 203.3,
+            "pagado_millones": 0.0,
+            "deuda_millones": 203.3,
+            "mora_pct": 100.0
+          },
+          {
+            "servicio": "MULTAS CODIGO NACIONAL DE POLICIA Y COVIVENCIA MULTAS ESPECIALES VIGENCIA ANTERIOR 537",
+            "facturado_millones": 77.6,
+            "pagado_millones": 24.1,
+            "deuda_millones": 53.5,
+            "mora_pct": 68.9
+          },
+          {
+            "servicio": "DONACIONES VIGENCIA ANTERIOR 604",
+            "facturado_millones": 29.3,
+            "pagado_millones": 0.0,
+            "deuda_millones": 29.3,
+            "mora_pct": 100.0
+          }
+        ],
+        "total_deuda_top5_millones": 1137.2,
+        "total_registros_con_mora": 9,
+        "analisis": null
+      }
+    },
+    "2022-1": {
+      "ingresos": {
+        "items": [
+          {
+            "categoria": "TRIBUTARIOS",
+            "recaudo_B": 348.4,
+            "presupuesto_B": 477.34,
+            "eficiencia_recaudo_pct": 73.0,
+            "pct_del_total": 22.8
+          },
+          {
+            "categoria": "NO TRIBUTARIOS",
+            "recaudo_B": 338.6,
+            "presupuesto_B": 605.96,
+            "eficiencia_recaudo_pct": 55.9,
+            "pct_del_total": 22.2
+          },
+          {
+            "categoria": "Transferencias corrientes",
+            "recaudo_B": 321.27,
+            "presupuesto_B": 579.94,
+            "eficiencia_recaudo_pct": 55.4,
+            "pct_del_total": 21.0
+          },
+          {
+            "categoria": "Superávit fiscal",
+            "recaudo_B": 258.99,
+            "presupuesto_B": 259.95,
+            "eficiencia_recaudo_pct": 99.6,
+            "pct_del_total": 17.0
+          },
+          {
+            "categoria": "Recursos del balance",
+            "recaudo_B": 258.99,
+            "presupuesto_B": 259.95,
+            "eficiencia_recaudo_pct": 99.6,
+            "pct_del_total": 17.0
+          }
+        ],
+        "total_recaudo_B": 1526.25,
+        "analisis": null
+      },
+      "gastos": {
+        "deuda": {
+          "pct": 3.08,
+          "eficacia_pct": 35.28,
+          "presupuesto_B": 38.44,
+          "pagos_B": 13.56
+        },
+        "inversion": {
+          "pct": 71.23,
+          "eficacia_pct": 26.55,
+          "presupuesto_B": 1179.46,
+          "pagos_B": 313.18
+        },
+        "funcionamiento": {
+          "pct": 25.69,
+          "eficacia_pct": 51.45,
+          "presupuesto_B": 219.53,
+          "pagos_B": 112.94
+        }
+      },
+      "obras": {
+        "items": [
+          {
+            "nombre": "TRANSPORTE INFRAESTRUCTURA RED VIAL REGIONAL VIA URBANA MEJORADA 201",
+            "asignada_millones": 34575.8,
+            "girada_millones": 617.0,
+            "avance_pct": 1.78,
+            "sin_movimiento": false
+          },
+          {
+            "nombre": "GOBIERNO TERRITORIAL FORTALECIMIENTO A LA GESTION Y DIRECCION DE LA ADMINISTRACION PUBLICA TERRITORIAL SEDES MANTENIDAS 526",
+            "asignada_millones": 26480.0,
+            "girada_millones": 0.0,
+            "avance_pct": 0.0,
+            "sin_movimiento": true
+          },
+          {
+            "nombre": "SALUD Y PROTECCION SOCIAL ASEGURAMIENTO Y PRESTACION INTEGRAL DE SERVICIOS DE SALUD HOSPITALES DE PRIMER NIVEL DE ATENCION CONSTRUIDOS Y DOTADOS 274",
+            "asignada_millones": 19689.3,
+            "girada_millones": 0.0,
+            "avance_pct": 0.0,
+            "sin_movimiento": true
+          },
+          {
+            "nombre": "EDUCACION CALIDAD, COBERTURA Y FORTALECIMIENTO DE LA EDUCACION INICIAL, PRESCOLAR, BASICA Y MEDIA SERVICIO DE APOYO FINANCIERO A ENTIDADES TERRITORIALES PARA LA EJECUCION DE ESTRATEGIAS DE PERMANENCIA CON ALIMENTACION ESCOLAR 201",
+            "asignada_millones": 16148.3,
+            "girada_millones": 168.4,
+            "avance_pct": 1.04,
+            "sin_movimiento": false
+          },
+          {
+            "nombre": "AMBIENTE Y DESARROLLO SOSTENIBLE ORDENAMIENTO AMBIENTAL TERRITORIAL OBRAS PARA LA PREVENCION Y CONTROL DE MOVIMIENTOS EN MASA 501",
+            "asignada_millones": 15225.6,
+            "girada_millones": 0.0,
+            "avance_pct": 0.0,
+            "sin_movimiento": true
+          }
+        ],
+        "total_proyectos": 10,
+        "sin_movimiento_count": 7,
+        "pct_sin_movimiento": 70.0,
+        "analisis": null
+      },
+      "proveedores": {
+        "items": [
+          {
+            "servicio": "EDUCACION CALIDAD, COBERTURA Y FORTALECIMIENTO DE LA EDUCACION INICIAL, PRESCOLAR, BSICA Y MEDIA SERVICIO EDUCATIVO 201",
+            "facturado_millones": 3373.1,
+            "pagado_millones": 2531.6,
+            "deuda_millones": 841.6,
+            "mora_pct": 24.9
+          },
+          {
+            "servicio": "EDUCACION CALIDAD, COBERTURA Y FORTALECIMIENTO DE LA EDUCACION INICIAL, PRESCOLAR, BASICA Y MEDIA SERVICIO EDUCATIVO 206 CALIDAD",
+            "facturado_millones": 1744.9,
+            "pagado_millones": 1492.1,
+            "deuda_millones": 252.8,
+            "mora_pct": 14.5
+          },
+          {
+            "servicio": "GOBIERNO TERRITORIAL FORTALECIMIENTO A LA GESTION Y DIRECCION DE LA ADMINISTRACION PUBLICA TERRITORIAL SERVICIO DE ASISTENCIA TECNICA 201",
+            "facturado_millones": 4418.3,
+            "pagado_millones": 4213.0,
+            "deuda_millones": 205.2,
+            "mora_pct": 4.6
+          },
+          {
+            "servicio": "ADQUISICIONES DIFERENTES DE ACTIVOS",
+            "facturado_millones": 13200.1,
+            "pagado_millones": 13091.5,
+            "deuda_millones": 108.6,
+            "mora_pct": 0.8
+          },
+          {
+            "servicio": "SERVICIOS PRESTADOS A LAS EMPRESAS Y SERVICIOS DE PRODUCCION",
+            "facturado_millones": 8128.0,
+            "pagado_millones": 8036.0,
+            "deuda_millones": 92.0,
+            "mora_pct": 1.1
+          }
+        ],
+        "total_deuda_top5_millones": 1500.2,
+        "total_registros_con_mora": 10,
+        "analisis": null
+      }
+    },
+    "2022-2": {
+      "ingresos": {
+        "items": [
+          {
+            "categoria": "NO TRIBUTARIOS",
+            "recaudo_B": 608.15,
+            "presupuesto_B": 597.92,
+            "eficiencia_recaudo_pct": 101.7,
+            "pct_del_total": 24.7
+          },
+          {
+            "categoria": "Transferencias corrientes",
+            "recaudo_B": 570.17,
+            "presupuesto_B": 571.21,
+            "eficiencia_recaudo_pct": 99.8,
+            "pct_del_total": 23.2
+          },
+          {
+            "categoria": "TRIBUTARIOS",
+            "recaudo_B": 553.92,
+            "presupuesto_B": 477.34,
+            "eficiencia_recaudo_pct": 116.0,
+            "pct_del_total": 22.5
+          },
+          {
+            "categoria": "Sistema General de Participaciones",
+            "recaudo_B": 366.78,
+            "presupuesto_B": 366.78,
+            "eficiencia_recaudo_pct": 100.0,
+            "pct_del_total": 14.9
+          },
+          {
+            "categoria": "Impuestos Indirectos",
+            "recaudo_B": 361.17,
+            "presupuesto_B": 280.22,
+            "eficiencia_recaudo_pct": 128.9,
+            "pct_del_total": 14.7
+          }
+        ],
+        "total_recaudo_B": 2460.21,
+        "analisis": null
+      },
+      "gastos": {
+        "funcionamiento": {
+          "pct": 86.31,
+          "eficacia_pct": 93.42,
+          "presupuesto_B": 216.77,
+          "pagos_B": 202.52
+        },
+        "deuda": {
+          "pct": 13.69,
+          "eficacia_pct": 83.57,
+          "presupuesto_B": 38.44,
+          "pagos_B": 32.12
+        }
+      },
+      "obras": {
+        "items": [
+          {
+            "nombre": "REDES DE ALUMBRADO PUBLICO MEJORADAS 526",
+            "asignada_millones": 14844.7,
+            "girada_millones": 335.3,
+            "avance_pct": 2.26,
+            "sin_movimiento": false
+          },
+          {
+            "nombre": "SALUD Y PROTECCION SOCIAL ASEGURAMIENTO Y PRESTACION INTEGRAL DE SERVICIOS DE SALUD HOSPITALES DE PRIMER NIVEL DE ATENCION CONSTRUIDOS Y DOTADOS 274",
+            "asignada_millones": 14097.6,
+            "girada_millones": 0.0,
+            "avance_pct": 0.0,
+            "sin_movimiento": true
+          },
+          {
+            "nombre": "SERVICIO DE MANTENIMIENTO A LA INFRAESTRUCTURA DEPORTIVA 501",
+            "asignada_millones": 14082.2,
+            "girada_millones": 223.6,
+            "avance_pct": 1.59,
+            "sin_movimiento": false
+          },
+          {
+            "nombre": "ESPACIO PUBLICO ADECUADO 501",
+            "asignada_millones": 13187.9,
+            "girada_millones": 0.0,
+            "avance_pct": 0.0,
+            "sin_movimiento": true
+          },
+          {
+            "nombre": "AGRICULTURA Y DESARROLLO RURAL INFRAESTRUCTURA PRODUCTIVA Y COMERCIALIZACION PLAZA DE MERCADO ADECUADAS RECURSOS DEL CREDITO VIGENCIA ANTERIOR 573",
+            "asignada_millones": 11560.0,
+            "girada_millones": 0.0,
+            "avance_pct": 0.0,
+            "sin_movimiento": true
+          }
+        ],
+        "total_proyectos": 10,
+        "sin_movimiento_count": 6,
+        "pct_sin_movimiento": 60.0,
+        "analisis": null
+      },
+      "proveedores": {
+        "items": [
+          {
+            "servicio": "SERVICIO DE APOYO PARA LA DOTACION HOSPITALARIA 274",
+            "facturado_millones": 4822.0,
+            "pagado_millones": 0.0,
+            "deuda_millones": 4822.0,
+            "mora_pct": 100.0
+          },
+          {
+            "servicio": "TRANSPORTE INFRAESTRUCTURA RED VIAL REGIONAL VIA TERCIARIA CON MANTENIMIENTO PERIODICO O RUTINARIO 273",
+            "facturado_millones": 2229.7,
+            "pagado_millones": 0.0,
+            "deuda_millones": 2229.7,
+            "mora_pct": 100.0
+          },
+          {
+            "servicio": "ESPACIO PUBLICO ADECUADO 201",
+            "facturado_millones": 1568.3,
+            "pagado_millones": 66.1,
+            "deuda_millones": 1502.1,
+            "mora_pct": 95.8
+          },
+          {
+            "servicio": "ESPACIO PUBLICO ADECUADO 501",
+            "facturado_millones": 1282.1,
+            "pagado_millones": 0.0,
+            "deuda_millones": 1282.1,
+            "mora_pct": 100.0
+          },
+          {
+            "servicio": "GOBIERNO TERRITORIAL FORTALECIMIENTO A LA GESTION Y DIRECCION DE LA ADMINISTRACION PUBLICA TERRITORIAL SEDES MANTENIDAS 526",
+            "facturado_millones": 3599.6,
+            "pagado_millones": 2446.8,
+            "deuda_millones": 1152.8,
+            "mora_pct": 32.0
+          }
+        ],
+        "total_deuda_top5_millones": 10988.7,
+        "total_registros_con_mora": 10,
+        "analisis": null
+      }
+    },
+    "2023-1": {
+      "ingresos": {
+        "items": [
+          {
+            "categoria": "TRIBUTARIOS",
+            "recaudo_B": 446.43,
+            "presupuesto_B": 582.5,
+            "eficiencia_recaudo_pct": 76.6,
+            "pct_del_total": 26.1
+          },
+          {
+            "categoria": "NO TRIBUTARIOS",
+            "recaudo_B": 376.04,
+            "presupuesto_B": 752.16,
+            "eficiencia_recaudo_pct": 50.0,
+            "pct_del_total": 22.0
+          },
+          {
+            "categoria": "Transferencias corrientes",
+            "recaudo_B": 350.57,
+            "presupuesto_B": 716.2,
+            "eficiencia_recaudo_pct": 48.9,
+            "pct_del_total": 20.5
+          },
+          {
+            "categoria": "Recursos del balance",
+            "recaudo_B": 269.59,
+            "presupuesto_B": 277.66,
+            "eficiencia_recaudo_pct": 97.1,
+            "pct_del_total": 15.7
+          },
+          {
+            "categoria": "Superávit fiscal",
+            "recaudo_B": 269.59,
+            "presupuesto_B": 277.66,
+            "eficiencia_recaudo_pct": 97.1,
+            "pct_del_total": 15.7
+          }
+        ],
+        "total_recaudo_B": 1712.22,
+        "analisis": null
+      },
+      "gastos": {
+        "funcionamiento": {
+          "pct": 22.86,
+          "eficacia_pct": 55.36,
+          "presupuesto_B": 235.71,
+          "pagos_B": 130.49
+        },
+        "deuda": {
+          "pct": 4.92,
+          "eficacia_pct": 39.12,
+          "presupuesto_B": 71.85,
+          "pagos_B": 28.11
+        },
+        "inversion": {
+          "pct": 72.22,
+          "eficacia_pct": 29.21,
+          "presupuesto_B": 1411.22,
+          "pagos_B": 412.24
+        }
+      },
+      "obras": {
+        "items": [
+          {
+            "nombre": "INFRAESTRUCTURA EDUCATIVA MEJORADA 273",
+            "asignada_millones": 79669.0,
+            "girada_millones": 0.0,
+            "avance_pct": 0.0,
+            "sin_movimiento": true
+          },
+          {
+            "nombre": "OBRAS PARA LA PREVENCION Y CONTROL DE MOVIMIENTOS EN MASA 800",
+            "asignada_millones": 61384.0,
+            "girada_millones": 0.0,
+            "avance_pct": 0.0,
+            "sin_movimiento": true
+          },
+          {
+            "nombre": "ESPACIO PUBLICO ADECUADO 201",
+            "asignada_millones": 34545.6,
+            "girada_millones": 0.0,
+            "avance_pct": 0.0,
+            "sin_movimiento": true
+          },
+          {
+            "nombre": "OBRAS PARA LA PREVENCION Y CONTROL DE MOVIMIENTOS EN MASA 201",
+            "asignada_millones": 27903.5,
+            "girada_millones": 539.3,
+            "avance_pct": 1.93,
+            "sin_movimiento": false
+          },
+          {
+            "nombre": "HOSPITALES DE PRIMER NIVEL DE ATENCION CONSTRUIDOS Y DOTADOS 275",
+            "asignada_millones": 23793.8,
+            "girada_millones": 0.0,
+            "avance_pct": 0.0,
+            "sin_movimiento": true
+          }
+        ],
+        "total_proyectos": 10,
+        "sin_movimiento_count": 8,
+        "pct_sin_movimiento": 80.0,
+        "analisis": null
+      },
+      "proveedores": {
+        "items": [
+          {
+            "servicio": "SERVICIO DE APOYO FINANCIERO A ENTIDADES TERRITORIALES PARA LA EJECUCION DE ESTRATEGIAS DE PERMANENCIA CON ALIMENTACION ESCOLAR 213",
+            "facturado_millones": 2436.0,
+            "pagado_millones": 1757.5,
+            "deuda_millones": 678.5,
+            "mora_pct": 27.9
+          },
+          {
+            "servicio": "ADQUISICIONES DIFERENTES DE ACTIVOS",
+            "facturado_millones": 13445.8,
+            "pagado_millones": 13206.8,
+            "deuda_millones": 239.0,
+            "mora_pct": 1.8
+          },
+          {
+            "servicio": "FINANCIACION DE DEFICIT FISCAL",
+            "facturado_millones": 213.6,
+            "pagado_millones": 0.0,
+            "deuda_millones": 213.6,
+            "mora_pct": 100.0
+          },
+          {
+            "servicio": "ADQUISICION DE BIENES Y SERVICIOS",
+            "facturado_millones": 213.6,
+            "pagado_millones": 0.0,
+            "deuda_millones": 213.6,
+            "mora_pct": 100.0
+          },
+          {
+            "servicio": "SERVICIO DE SANEAMIENTO FISCAL",
+            "facturado_millones": 213.6,
+            "pagado_millones": 0.0,
+            "deuda_millones": 213.6,
+            "mora_pct": 100.0
+          }
+        ],
+        "total_deuda_top5_millones": 1558.3,
+        "total_registros_con_mora": 10,
+        "analisis": null
+      }
+    },
+    "2023-2": {
+      "ingresos": {
+        "items": [
+          {
+            "categoria": "NO TRIBUTARIOS",
+            "recaudo_B": 729.46,
+            "presupuesto_B": 765.15,
+            "eficiencia_recaudo_pct": 95.3,
+            "pct_del_total": 24.7
+          },
+          {
+            "categoria": "Transferencias corrientes",
+            "recaudo_B": 680.54,
+            "presupuesto_B": 727.8,
+            "eficiencia_recaudo_pct": 93.5,
+            "pct_del_total": 23.1
+          },
+          {
+            "categoria": "TRIBUTARIOS",
+            "recaudo_B": 674.56,
+            "presupuesto_B": 607.37,
+            "eficiencia_recaudo_pct": 111.1,
+            "pct_del_total": 22.9
+          },
+          {
+            "categoria": "Impuestos Indirectos",
+            "recaudo_B": 448.64,
+            "presupuesto_B": 386.74,
+            "eficiencia_recaudo_pct": 116.0,
+            "pct_del_total": 15.2
+          },
+          {
+            "categoria": "Sistema General de Participaciones",
+            "recaudo_B": 417.35,
+            "presupuesto_B": 417.35,
+            "eficiencia_recaudo_pct": 100.0,
+            "pct_del_total": 14.1
+          }
+        ],
+        "total_recaudo_B": 2950.55,
+        "analisis": null
+      },
+      "gastos": {
+        "deuda": {
+          "pct": 23.4,
+          "eficacia_pct": 95.46,
+          "presupuesto_B": 77.16,
+          "pagos_B": 73.66
+        },
+        "funcionamiento": {
+          "pct": 76.6,
+          "eficacia_pct": 97.83,
+          "presupuesto_B": 246.5,
+          "pagos_B": 241.17
+        }
+      },
+      "obras": {
+        "items": [
+          {
+            "nombre": "HOSPITALES DE PRIMER NIVEL DE ATENCION CONSTRUIDOS Y DOTADOS 275",
+            "asignada_millones": 23793.8,
+            "girada_millones": 0.0,
+            "avance_pct": 0.0,
+            "sin_movimiento": true
+          },
+          {
+            "nombre": "REDES DE ALUMBRADO PUBLICO MEJORADAS 526",
+            "asignada_millones": 11058.0,
+            "girada_millones": 1063.2,
+            "avance_pct": 9.61,
+            "sin_movimiento": false
+          },
+          {
+            "nombre": "VIA URBANA CONSTRUIDA 530",
+            "asignada_millones": 7688.4,
+            "girada_millones": 0.0,
+            "avance_pct": 0.0,
+            "sin_movimiento": true
+          },
+          {
+            "nombre": "SGP EDUCACION PRESTACION DE SERVICIOS NOMINA CSF 205",
+            "asignada_millones": 7536.7,
+            "girada_millones": 0.0,
+            "avance_pct": 0.0,
+            "sin_movimiento": true
+          },
+          {
+            "nombre": "SEDES MANTENIDAS 526",
+            "asignada_millones": 4697.6,
+            "girada_millones": 386.3,
+            "avance_pct": 8.22,
+            "sin_movimiento": false
+          }
+        ],
+        "total_proyectos": 10,
+        "sin_movimiento_count": 8,
+        "pct_sin_movimiento": 80.0,
+        "analisis": null
+      },
+      "proveedores": {
+        "items": [
+          {
+            "servicio": "SGP EDUCACION PRESTACION DE SERVICIOS NOMINA CSF 205",
+            "facturado_millones": 7536.7,
+            "pagado_millones": 0.0,
+            "deuda_millones": 7536.7,
+            "mora_pct": 100.0
+          },
+          {
+            "servicio": "SERVICIOS DE PROMOCION DE LOS DERECHOS DE LOS NIÑOS, NIÑAS, ADOLESCENTES 201",
+            "facturado_millones": 3359.8,
+            "pagado_millones": 0.0,
+            "deuda_millones": 3359.8,
+            "mora_pct": 100.0
+          },
+          {
+            "servicio": "OBRAS Y MEDIDAS DE ADECUACION HIDRAULICA 501",
+            "facturado_millones": 17906.1,
+            "pagado_millones": 15120.2,
+            "deuda_millones": 2785.9,
+            "mora_pct": 15.6
+          },
+          {
+            "servicio": "SERVICIO EDUCATIVO 201",
+            "facturado_millones": 16180.6,
+            "pagado_millones": 14026.3,
+            "deuda_millones": 2154.3,
+            "mora_pct": 13.3
+          },
+          {
+            "servicio": "ESPACIO PUBLICO ADECUADO 201",
+            "facturado_millones": 11563.4,
+            "pagado_millones": 10237.6,
+            "deuda_millones": 1325.8,
+            "mora_pct": 11.5
+          }
+        ],
+        "total_deuda_top5_millones": 17162.5,
+        "total_registros_con_mora": 10,
+        "analisis": null
+      }
+    },
+    "2024-1": {
+      "ingresos": {
+        "items": [
+          {
+            "categoria": "TRIBUTARIOS",
+            "recaudo_B": 472.76,
+            "presupuesto_B": 666.05,
+            "eficiencia_recaudo_pct": 71.0,
+            "pct_del_total": 24.5
+          },
+          {
+            "categoria": "NO TRIBUTARIOS",
+            "recaudo_B": 458.22,
+            "presupuesto_B": 781.76,
+            "eficiencia_recaudo_pct": 58.6,
+            "pct_del_total": 23.8
+          },
+          {
+            "categoria": "Transferencias corrientes",
+            "recaudo_B": 432.2,
+            "presupuesto_B": 732.93,
+            "eficiencia_recaudo_pct": 59.0,
+            "pct_del_total": 22.4
+          },
+          {
+            "categoria": "Recursos del balance",
+            "recaudo_B": 282.68,
+            "presupuesto_B": 282.3,
+            "eficiencia_recaudo_pct": 100.1,
+            "pct_del_total": 14.7
+          },
+          {
+            "categoria": "Superávit fiscal",
+            "recaudo_B": 282.68,
+            "presupuesto_B": 282.3,
+            "eficiencia_recaudo_pct": 100.1,
+            "pct_del_total": 14.7
+          }
+        ],
+        "total_recaudo_B": 1928.54,
+        "analisis": null
+      },
+      "gastos": {
+        "funcionamiento": {
+          "pct": 74.1,
+          "eficacia_pct": 49.57,
+          "presupuesto_B": 280.19,
+          "pagos_B": 138.88
+        },
+        "deuda": {
+          "pct": 25.9,
+          "eficacia_pct": 42.07,
+          "presupuesto_B": 115.36,
+          "pagos_B": 48.53
+        }
+      },
+      "obras": {
+        "items": [
+          {
+            "nombre": "SERVICIO DE ALUMBRADO PBLICO 226",
+            "asignada_millones": 48035.6,
+            "girada_millones": 0.0,
+            "avance_pct": 0.0,
+            "sin_movimiento": true
+          },
+          {
+            "nombre": "OBRAS DE INFRAESTRUCTURA PARA LA REDUCCION DEL RIESGO DE DESASTRES 501",
+            "asignada_millones": 47549.2,
+            "girada_millones": 0.0,
+            "avance_pct": 0.0,
+            "sin_movimiento": true
+          },
+          {
+            "nombre": "SERVICIO DE ALUMBRADO PBLICO 526",
+            "asignada_millones": 28518.9,
+            "girada_millones": 0.0,
+            "avance_pct": 0.0,
+            "sin_movimiento": true
+          },
+          {
+            "nombre": "OBRAS DE INFRAESTRUCTURA PARA LA REDUCCION DEL RIESGO DE DESASTRES OTRAS OBRAS DE INGENIERA CIVIL 201",
+            "asignada_millones": 23741.4,
+            "girada_millones": 0.0,
+            "avance_pct": 0.0,
+            "sin_movimiento": true
+          },
+          {
+            "nombre": "SERVICIO DE AFILIACIONES AL REGIMEN SUBSIDIADO DEL SISTEMA GENERAL DE SEGURIDAD SOCIAL 292",
+            "asignada_millones": 21960.7,
+            "girada_millones": 1649.5,
+            "avance_pct": 7.51,
+            "sin_movimiento": false
+          }
+        ],
+        "total_proyectos": 10,
+        "sin_movimiento_count": 8,
+        "pct_sin_movimiento": 80.0,
+        "analisis": null
+      },
+      "proveedores": {
+        "items": [
+          {
+            "servicio": "SERVICIO EDUCATIVO 201",
+            "facturado_millones": 5261.3,
+            "pagado_millones": 4140.9,
+            "deuda_millones": 1120.3,
+            "mora_pct": 21.3
+          },
+          {
+            "servicio": "ADQUISICIONES DIFERENTES DE ACTIVOS",
+            "facturado_millones": 12665.3,
+            "pagado_millones": 12111.8,
+            "deuda_millones": 553.6,
+            "mora_pct": 4.4
+          },
+          {
+            "servicio": "ADQUISICION DE SERVICIOS",
+            "facturado_millones": 10082.6,
+            "pagado_millones": 9529.1,
+            "deuda_millones": 553.6,
+            "mora_pct": 5.5
+          },
+          {
+            "servicio": "SERVICIOS PRESTADOS A LAS EMPRESAS Y SERVICIOS DE PRODUCCION",
+            "facturado_millones": 9143.4,
+            "pagado_millones": 8766.4,
+            "deuda_millones": 377.1,
+            "mora_pct": 4.1
+          },
+          {
+            "servicio": "SERVICIO DE ASISTENCIA TECNICA 201",
+            "facturado_millones": 4944.3,
+            "pagado_millones": 4586.3,
+            "deuda_millones": 358.0,
+            "mora_pct": 7.2
+          }
+        ],
+        "total_deuda_top5_millones": 2962.6,
+        "total_registros_con_mora": 10,
+        "analisis": null
+      }
+    },
+    "2024-2": {
+      "ingresos": {
+        "items": [
+          {
+            "categoria": "NO TRIBUTARIOS",
+            "recaudo_B": 911.42,
+            "presupuesto_B": 895.58,
+            "eficiencia_recaudo_pct": 101.8,
+            "pct_del_total": 26.1
+          },
+          {
+            "categoria": "Transferencias corrientes",
+            "recaudo_B": 849.29,
+            "presupuesto_B": 844.96,
+            "eficiencia_recaudo_pct": 100.5,
+            "pct_del_total": 24.3
+          },
+          {
+            "categoria": "TRIBUTARIOS",
+            "recaudo_B": 736.71,
+            "presupuesto_B": 691.72,
+            "eficiencia_recaudo_pct": 106.5,
+            "pct_del_total": 21.1
+          },
+          {
+            "categoria": "Sistema General de Participaciones",
+            "recaudo_B": 542.99,
+            "presupuesto_B": 542.99,
+            "eficiencia_recaudo_pct": 100.0,
+            "pct_del_total": 15.5
+          },
+          {
+            "categoria": "Impuestos Indirectos",
+            "recaudo_B": 454.89,
+            "presupuesto_B": 419.99,
+            "eficiencia_recaudo_pct": 108.3,
+            "pct_del_total": 13.0
+          }
+        ],
+        "total_recaudo_B": 3495.3,
+        "analisis": null
+      },
+      "gastos": {
+        "deuda": {
+          "pct": 25.77,
+          "eficacia_pct": 83.09,
+          "presupuesto_B": 110.76,
+          "pagos_B": 92.03
+        },
+        "funcionamiento": {
+          "pct": 74.23,
+          "eficacia_pct": 89.09,
+          "presupuesto_B": 297.62,
+          "pagos_B": 265.14
+        }
+      },
+      "obras": {
+        "items": [
+          {
+            "nombre": "SERVICIO DE ALUMBRADO PUBLICO 226",
+            "asignada_millones": 40933.6,
+            "girada_millones": 1279.0,
+            "avance_pct": 3.12,
+            "sin_movimiento": false
+          },
+          {
+            "nombre": "SERVICIO DE ALUMBRADO PBLICO 526",
+            "asignada_millones": 15101.4,
+            "girada_millones": 0.0,
+            "avance_pct": 0.0,
+            "sin_movimiento": true
+          },
+          {
+            "nombre": "VIA URBANA CONSTRUIDA 530",
+            "asignada_millones": 13615.1,
+            "girada_millones": 0.0,
+            "avance_pct": 0.0,
+            "sin_movimiento": true
+          },
+          {
+            "nombre": "ESPACIO PUBLICO ADECUADO 289",
+            "asignada_millones": 12891.1,
+            "girada_millones": 0.0,
+            "avance_pct": 0.0,
+            "sin_movimiento": true
+          },
+          {
+            "nombre": "SERVICIO DE PROMOCION DE LA SALUD 275",
+            "asignada_millones": 11973.6,
+            "girada_millones": 0.0,
+            "avance_pct": 0.0,
+            "sin_movimiento": true
+          }
+        ],
+        "total_proyectos": 10,
+        "sin_movimiento_count": 8,
+        "pct_sin_movimiento": 80.0,
+        "analisis": null
+      },
+      "proveedores": {
+        "items": [
+          {
+            "servicio": "SERVICIO EDUCATIVO 205",
+            "facturado_millones": 333474.9,
+            "pagado_millones": 319976.8,
+            "deuda_millones": 13498.1,
+            "mora_pct": 4.0
+          },
+          {
+            "servicio": "SERVICIO DE APOYO A LA PRESTACION DEL SERVICIO DE TRANSPORTE DE PACIENTES 275",
+            "facturado_millones": 794.5,
+            "pagado_millones": 0.0,
+            "deuda_millones": 794.5,
+            "mora_pct": 100.0
+          },
+          {
+            "servicio": "ADQUISICIONES DIFERENTES DE ACTIVOS",
+            "facturado_millones": 42318.4,
+            "pagado_millones": 41837.3,
+            "deuda_millones": 481.1,
+            "mora_pct": 1.1
+          },
+          {
+            "servicio": "MATERIALES Y SUMINISTROS",
+            "facturado_millones": 7681.9,
+            "pagado_millones": 7260.2,
+            "deuda_millones": 421.7,
+            "mora_pct": 5.5
+          },
+          {
+            "servicio": "OTROS BIENES TRANSPORTABLES (EXCEPTO PRODUCTOS METALICOS, MAQUINARIA Y EQUIPO)",
+            "facturado_millones": 2741.0,
+            "pagado_millones": 2322.4,
+            "deuda_millones": 418.6,
+            "mora_pct": 15.3
+          }
+        ],
+        "total_deuda_top5_millones": 15614.0,
+        "total_registros_con_mora": 10,
+        "analisis": null
+      }
+    },
+    "2025-1": {
+      "ingresos": {
+        "items": [
+          {
+            "categoria": "TRIBUTARIOS",
+            "recaudo_B": 533.08,
+            "presupuesto_B": 738.31,
+            "eficiencia_recaudo_pct": 72.2,
+            "pct_del_total": 25.3
+          },
+          {
+            "categoria": "NO TRIBUTARIOS",
+            "recaudo_B": 499.14,
+            "presupuesto_B": 917.4,
+            "eficiencia_recaudo_pct": 54.4,
+            "pct_del_total": 23.7
+          },
+          {
+            "categoria": "Transferencias corrientes",
+            "recaudo_B": 471.46,
+            "presupuesto_B": 864.87,
+            "eficiencia_recaudo_pct": 54.5,
+            "pct_del_total": 22.4
+          },
+          {
+            "categoria": "Sistema General de Participaciones",
+            "recaudo_B": 304.99,
+            "presupuesto_B": 552.22,
+            "eficiencia_recaudo_pct": 55.2,
+            "pct_del_total": 14.5
+          },
+          {
+            "categoria": "Impuestos Directos",
+            "recaudo_B": 296.47,
+            "presupuesto_B": 286.39,
+            "eficiencia_recaudo_pct": 103.5,
+            "pct_del_total": 14.1
+          }
+        ],
+        "total_recaudo_B": 2105.15,
+        "analisis": null
+      },
+      "gastos": {
+        "funcionamiento": {
+          "pct": 77.47,
+          "eficacia_pct": 47.62,
+          "presupuesto_B": 329.41,
+          "pagos_B": 156.88
+        },
+        "deuda": {
+          "pct": 22.53,
+          "eficacia_pct": 42.6,
+          "presupuesto_B": 107.11,
+          "pagos_B": 45.63
+        }
+      },
+      "obras": {
+        "items": [
+          {
+            "nombre": "OTRAS OBRAS DE INGENIERIA CIVIL 501",
+            "asignada_millones": 35636.2,
+            "girada_millones": 0.0,
+            "avance_pct": 0.0,
+            "sin_movimiento": true
+          },
+          {
+            "nombre": "SERVICIO DE ALUMBRADO PUBLICO 226",
+            "asignada_millones": 34816.3,
+            "girada_millones": 0.0,
+            "avance_pct": 0.0,
+            "sin_movimiento": true
+          },
+          {
+            "nombre": "CARRETERAS (EXCEPTO CARRETERAS ELEVADAS) CALLES 289",
+            "asignada_millones": 22910.4,
+            "girada_millones": 0.0,
+            "avance_pct": 0.0,
+            "sin_movimiento": true
+          },
+          {
+            "nombre": "SERVICIO DE MANTENIMIENTO Y REPARACION DE EQUIPOS ELECTRICOS DE ILUMINACION 226",
+            "asignada_millones": 17568.0,
+            "girada_millones": 223.2,
+            "avance_pct": 1.27,
+            "sin_movimiento": false
+          },
+          {
+            "nombre": "OTROS EDIFICIOS NO RESIDENCIALES",
+            "asignada_millones": 15557.3,
+            "girada_millones": 0.0,
+            "avance_pct": 0.0,
+            "sin_movimiento": true
+          }
+        ],
+        "total_proyectos": 10,
+        "sin_movimiento_count": 7,
+        "pct_sin_movimiento": 70.0,
+        "analisis": null
+      },
+      "proveedores": {
+        "items": [
+          {
+            "servicio": "A ENTIDADES DEL GOBIERNO",
+            "facturado_millones": 96428.7,
+            "pagado_millones": 94172.5,
+            "deuda_millones": 2256.2,
+            "mora_pct": 2.3
+          },
+          {
+            "servicio": "A OTRAS ENTIDADES DEL GOBIERNO",
+            "facturado_millones": 39638.4,
+            "pagado_millones": 37395.5,
+            "deuda_millones": 2242.9,
+            "mora_pct": 5.7
+          },
+          {
+            "servicio": "APORTE BOMBEROS BUCARAMANGA SOBRETASA BOMBERIL",
+            "facturado_millones": 12122.7,
+            "pagado_millones": 9879.8,
+            "deuda_millones": 2242.9,
+            "mora_pct": 18.5
+          },
+          {
+            "servicio": "APORTES A ESTABLECIMIENTOS PUBLICOS Y UNIDADES ADMINISTRATIVAS ESPECIALES",
+            "facturado_millones": 39638.4,
+            "pagado_millones": 37395.5,
+            "deuda_millones": 2242.9,
+            "mora_pct": 5.7
+          },
+          {
+            "servicio": "SERVICIO DE APOYO FINANCIERO A ENTIDADES TERRITORIALES PARA LA EJECUCION DE ESTRATEGIAS DE PERMANENCIA CON ALIMENTACION ESCOLAR 201",
+            "facturado_millones": 8928.3,
+            "pagado_millones": 7478.4,
+            "deuda_millones": 1449.9,
+            "mora_pct": 16.2
+          }
+        ],
+        "total_deuda_top5_millones": 10434.8,
+        "total_registros_con_mora": 10,
+        "analisis": null
+      }
+    }
+  }
+}

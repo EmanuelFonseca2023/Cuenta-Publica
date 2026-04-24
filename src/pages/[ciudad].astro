@@ -1,0 +1,39 @@
+---
+import Base      from '../layouts/Base.astro';
+import Hero      from '../components/Hero.astro';
+import Dashboard from '../components/Dashboard.svelte';
+
+import bucaramangaData from '../data/bucaramanga.json';
+
+export function getStaticPaths() {
+  // ✅ CIUDADES debe vivir AQUÍ adentro (o ser importado a nivel de módulo)
+  const CIUDADES = {
+    bucaramanga: {
+      data:         bucaramangaData,
+      nombre:       'Bucaramanga',
+      departamento: 'Santander',
+      descripcion:  'Cada peso que pagas en impuesto predial...',
+    },
+  };
+
+  return Object.entries(CIUDADES).map(([slug, meta]) => ({
+    params: { ciudad: slug },
+    props:  { meta },          // ← pasas el objeto completo como prop
+  }));
+}
+
+// ✅ Ahora recibes `meta` desde props, no desde CIUDADES
+const { meta } = Astro.props;
+---
+
+<Base ciudad={meta.nombre}>
+  <Hero
+    ciudad={meta.nombre}
+    departamento={meta.departamento}
+    descripcion={meta.descripcion}
+  />
+  <Dashboard
+    client:load
+    data={meta.data}
+  />
+</Base>

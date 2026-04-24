@@ -1,0 +1,42 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+  ciudad?: string;
+}
+
+const {
+  title = 'Cuenta Pública — Los números de tu ciudad, en lenguaje tuyo',
+  description = 'Explora de dónde viene y en qué se gasta el dinero público de tu ciudad. Datos abiertos del Estado colombiano, en lenguaje simple.',
+  ciudad,
+} = Astro.props;
+
+const pageTitle = ciudad
+  ? `${ciudad} · Cuenta Pública`
+  : title;
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+
+    <!-- Open Graph básico -->
+    <meta property="og:title"       content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type"        content="website" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <title>{pageTitle}</title>
+  </head>
+
+  <body class="pb-24 antialiased">
+    <slot />
+  </body>
+</html>

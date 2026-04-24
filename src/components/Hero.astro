@@ -1,0 +1,42 @@
+---
+interface Props {
+  ciudad: string;
+  departamento: string;
+  descripcion: string;
+}
+
+const { ciudad, departamento, descripcion } = Astro.props;
+---
+
+<header class="bg-navy text-white pt-16 pb-12 px-6 relative z-20">
+  <div class="max-w-4xl mx-auto text-center">
+
+    <span class="badge bg-white/10 text-emerald-300 border border-white/20 mb-6">
+      <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+      </svg>
+      Datos abiertos · {departamento}
+    </span>
+
+    <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-3">
+      {ciudad}
+    </h1>
+    <p class="text-blue-200 text-xl md:text-2xl font-light mb-8">
+      ¿Sabes en qué se convierte el dinero que pagas en impuestos?
+    </p>
+    <p class="text-blue-100 text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
+      {descripcion}
+    </p>
+
+    <a
+      href="/"
+      class="inline-flex items-center gap-2 mt-10 text-sm text-blue-300 hover:text-white transition-colors"
+    >
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+      </svg>
+      Ver todas las ciudades
+    </a>
+
+  </div>
+</header>
