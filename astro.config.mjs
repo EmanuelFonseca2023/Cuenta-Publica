@@ -1,12 +1,14 @@
+// astro.config.mjs
 import { defineConfig } from 'astro/config';
 import svelte from '@astrojs/svelte';
-import tailwindcss from '@tailwindcss/vite'; 
+import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
   integrations: [svelte()],
   output: 'static',
   base: '/Cuenta-Publica',
-  vite: {                       
+  trailingSlash: 'always',   // ← agrega esto
+  vite: {
     plugins: [tailwindcss()],
   },
 });
