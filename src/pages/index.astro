@@ -24,6 +24,8 @@ const ciudades = [
     disponible:   false,
   },
 ];
+
+const base = import.meta.env.BASE_URL; // '/' en dev, '/Cuenta-Publica/' en producción
 ---
 
 <Base>
@@ -66,7 +68,7 @@ const ciudades = [
       {ciudades.map((c) => (
         c.disponible ? (
           <a
-            href={`/${c.slug}`}
+            href={`${base}${c.slug}`}
             class="card-hover group bg-white rounded-2xl border border-slate-100 p-6 shadow-sm flex flex-col gap-3"
           >
             <span class="text-4xl">{c.emoji}</span>
