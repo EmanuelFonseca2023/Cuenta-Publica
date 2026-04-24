@@ -1,8 +1,12 @@
 import { defineConfig } from 'astro/config';
 import svelte from '@astrojs/svelte';
+import tailwindcss from '@tailwindcss/vite'; 
 
 export default defineConfig({
   integrations: [svelte()],
   output: 'static',
-  base: '/Cuenta-Publica',  // ← mayúscula C y P, igual que tu repo
+  base: '/Cuenta-Publica',
+  vite: {                       
+    plugins: [tailwindcss()],
+  },
 });
