@@ -4,5 +4,5 @@ import svelte from '@astrojs/svelte';
 export default defineConfig({
   integrations: [svelte()],
   output: 'static',
-  base: '/cuenta-publica',
+  base: '/Cuenta-Publica',  // ← mayúscula C y P, igual que tu repo
 });
