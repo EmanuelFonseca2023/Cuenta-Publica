@@ -20,22 +20,22 @@
   let { obras }: Props = $props();
 </script>
 
-<section class="bg-white rounded-3xl shadow-sm border border-slate-100 p-6 lg:p-10">
-  <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
+<section class="bg-white rounded-3xl shadow-sm border border-slate-100 p-4 sm:p-6 lg:p-10">
+  <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8">
 
     <!-- Descripción -->
-    <div class="lg:col-span-5 flex flex-col">
-      <div class="flex items-center gap-3 mb-4">
+    <div class="lg:col-span-5 flex flex-col gap-4">
+      <div class="flex items-center gap-3">
         <span class="text-4xl">🚧</span>
         <h2 class="text-2xl lg:text-3xl font-bold text-navy">Proyectos que avanzan (o no)</h2>
       </div>
-      <p class="text-base text-slate-500 mb-4 leading-relaxed">
+      <p class="text-base text-slate-500 leading-relaxed">
         Que un proyecto tenga plata asignada no significa que ya se esté ejecutando.
         Aquí ves cuánto ha avanzado realmente cada uno.
       </p>
 
       <!-- Resumen estadístico -->
-      <div class="flex gap-4 mb-4">
+      <div class="flex gap-3">
         <div class="flex-1 bg-slate-50 rounded-2xl p-4 border border-slate-100 text-center">
           <p class="text-2xl font-bold text-navy">{obras.total_proyectos}</p>
           <p class="text-xs text-slate-400 uppercase tracking-wider font-bold mt-1">Proyectos</p>
@@ -50,7 +50,7 @@
         </div>
       </div>
 
-      <div class="mt-auto p-5 bg-amber-50 rounded-2xl border border-amber-100">
+      <div class="p-4 sm:p-5 bg-amber-50 rounded-2xl border border-amber-100">
         <p class="text-sm text-amber-900 leading-relaxed">
           <strong>¿Por qué puede estar en 0%?</strong> A veces está atrapado en licitaciones
           o firmas de contrato. El problema es real igual: mientras eso pasa, el parque no
@@ -60,24 +60,28 @@
     </div>
 
     <!-- Cards de obras -->
-    <div class="lg:col-span-7 flex flex-col justify-center space-y-4">
+    <div class="lg:col-span-7 flex flex-col gap-3">
       {#if obras.items.length === 0}
         <p class="text-sm text-slate-400 italic p-4">Sin proyectos destacados este semestre.</p>
       {:else}
         {#each obras.items as obra}
           {@const color = obra.avance_pct < 5 ? '#d97706' : '#059669'}
-          <div class="bg-slate-50/70 p-5 rounded-2xl border border-slate-100">
-            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-3 gap-3">
-              <p class="text-base font-bold text-navy leading-tight">{obra.nombre}</p>
+          <div class="bg-slate-50/70 p-4 sm:p-5 rounded-2xl border border-slate-100">
+            <div class="flex justify-between items-start gap-3 mb-3">
+              <p class="text-sm sm:text-base font-bold text-navy leading-tight wrap-break-word min-w-0">
+                {obra.nombre}
+              </p>
               {#if obra.sin_movimiento}
-                <span class="badge bg-red-100 text-red-700 border border-red-200 shrink-0">Sin movimiento</span>
+                <span class="badge bg-red-100 text-red-700 border border-red-200 shrink-0 whitespace-nowrap">
+                  Sin movimiento
+                </span>
               {:else}
-                <span class="badge bg-amber-100 text-amber-800 border border-amber-200 shrink-0">
+                <span class="badge bg-amber-100 text-amber-800 border border-amber-200 shrink-0 whitespace-nowrap">
                   {obra.avance_pct.toFixed(1)}% ejecutado
                 </span>
               {/if}
             </div>
-            <div class="flex justify-between text-sm text-slate-500 mb-3">
+            <div class="flex justify-between text-xs sm:text-sm text-slate-500 mb-3">
               <span>Asignado: <strong class="text-slate-700">${obra.asignada_millones.toLocaleString('es-CO')} M</strong></span>
               <span>Girado: <strong class="text-slate-700">${obra.girada_millones.toLocaleString('es-CO')} M</strong></span>
             </div>
@@ -92,7 +96,7 @@
       {/if}
 
       {#if obras.analisis}
-        <p class="text-sm text-slate-500 italic px-2 leading-relaxed">{obras.analisis}</p>
+        <p class="text-sm text-slate-500 italic px-1 leading-relaxed">{obras.analisis}</p>
       {/if}
     </div>
 

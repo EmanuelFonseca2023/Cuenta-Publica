@@ -28,17 +28,21 @@
 
   let { ingresos }: Props = $props();
 
-  const COLORES: Record<string, string> = {
-    'Impuestos Tributarios':   '#1e3a8a',
-    'No Tributarios':          '#059669',
-    'Transferencias Nación':   '#94a3b8',
-  };
+  // Orden importa: 'no tributario' debe evaluarse ANTES que 'tributario'
+  const COLORES_MAP: { key: string; color: string }[] = [
+    { key: 'no tributario',   color: '#059669' }, // emerald
+    { key: 'tributario',      color: '#1e3a8a' }, // navy
+    { key: 'sistema general', color: '#7c3aed' }, // violet
+    { key: 'transferencia',   color: '#6366f1' }, // indigo
+    { key: 'impuesto directo',color: '#d97706' }, // amber
+  ];
 
   function colorFor(categoria: string): string {
-    for (const key of Object.keys(COLORES)) {
-      if (categoria.includes(key)) return COLORES[key];
+    const lower = categoria.toLowerCase();
+    for (const { key, color } of COLORES_MAP) {
+      if (lower.includes(key)) return color;
     }
-    return '#cbd5e1';
+    return '#94a3b8'; // slate-400 fallback
   }
 
   let chartData = $derived({
@@ -61,8 +65,10 @@
       legend: {
         position: 'bottom',
         labels: {
-          font:    { size: 13, family: 'DM Sans', weight: 500 },
-          padding: 20,
+          font:    { size: 12, family: 'DM Sans', weight: 500 },
+          padding: 16,
+          usePointStyle: true,
+          pointStyle:    'circle',
         },
       },
       tooltip: {

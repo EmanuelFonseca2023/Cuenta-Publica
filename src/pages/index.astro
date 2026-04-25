@@ -1,101 +1,102 @@
 ---
 import Base from '../layouts/Base.astro';
 
-const ciudades = [
-  {
-    slug:         'bucaramanga',
-    nombre:       'Bucaramanga',
-    departamento: 'Santander',
-    emoji:        '🏔️',
-    disponible:   true,
-  },
-  {
-    slug:         'bogota',
-    nombre:       'Bogotá',
-    departamento: 'Cundinamarca',
-    emoji:        '🏙️',
-    disponible:   false,
-  },
-  {
-    slug:         'medellin',
-    nombre:       'Medellín',
-    departamento: 'Antioquia',
-    emoji:        '🌸',
-    disponible:   false,
-  },
-];
-
 const base = import.meta.env.BASE_URL;
 ---
 
 <Base>
-  <header class="bg-navy text-white pt-20 pb-16 px-6">
-    <div class="max-w-3xl mx-auto text-center">
-      <span class="badge bg-white/10 text-emerald-300 border border-white/20 mb-6">
+  <!-- Hero -->
+  <header class="bg-navy text-white pt-16 pb-20 px-6 relative overflow-hidden">
+    <!-- Ruido de fondo sutil -->
+    <div class="absolute inset-0 opacity-[0.03] bg-[radial-gradient(circle_at_20%_50%,white,transparent_60%)]"></div>
+
+    <div class="max-w-2xl mx-auto text-center relative">
+      <span class="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-emerald-300
+                   text-xs font-bold uppercase tracking-widest rounded-full px-4 py-1.5 mb-8">
         <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
           <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
         </svg>
         Datos abiertos · Colombia
       </span>
 
-      <h1 class="text-5xl md:text-7xl font-bold leading-tight mb-5">
+      <h1 class="font-display text-5xl md:text-6xl font-bold leading-tight mb-4">
         Cuenta Pública
       </h1>
-      <p class="text-blue-200 text-xl md:text-2xl font-light mb-6">
+      <p class="text-blue-200 text-lg md:text-xl font-light mb-4">
         Los números de tu ciudad, en lenguaje tuyo.
       </p>
-      <p class="text-blue-100 text-base md:text-lg max-w-xl mx-auto leading-relaxed">
+      <p class="text-blue-100/80 text-sm md:text-base max-w-lg mx-auto leading-relaxed">
         El dinero que pagas en impuestos entra al presupuesto de tu ciudad.
         Aquí puedes ver de dónde viene, en qué se gasta y qué proyectos
-        están avanzando — o detenidos.
+        avanzan — o están paralizados.
       </p>
     </div>
   </header>
 
-  <main class="max-w-4xl mx-auto px-4 sm:px-6 py-16">
-    <h2 class="text-2xl font-bold text-navy mb-2">Elige tu ciudad</h2>
-    <p class="text-slate-500 mb-8 text-base">
-      Estamos agregando más ciudades. Si quieres ver la tuya,
-      <a href="https://datos.gov.co" target="_blank" rel="noopener"
-         class="text-emerald underline underline-offset-2 hover:opacity-80 transition-opacity">
-        los datos son públicos
-      </a>.
-    </p>
+  <main class="max-w-2xl mx-auto px-4 sm:px-6 py-14">
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
-      {ciudades.map((c) => (
-        c.disponible ? (
-          <a
-            href={`${base}${c.slug}`}
-            class="card-hover group bg-white rounded-2xl border border-slate-100 p-6 shadow-sm flex flex-col gap-3"
-          >
-            <span class="text-4xl">{c.emoji}</span>
-            <div>
-              <p class="text-lg font-bold text-navy group-hover:text-emerald transition-colors">{c.nombre}</p>
-              <p class="text-sm text-slate-400">{c.departamento}</p>
-            </div>
-            <span class="mt-auto badge bg-emerald/10 text-emerald border border-emerald/20 self-start">
-              Disponible
-            </span>
-          </a>
-        ) : (
-          <div class="bg-white/60 rounded-2xl border border-dashed border-slate-200 p-6 flex flex-col gap-3 opacity-60 cursor-not-allowed">
-            <span class="text-4xl grayscale">{c.emoji}</span>
-            <div>
-              <p class="text-lg font-bold text-slate-400">{c.nombre}</p>
-              <p class="text-sm text-slate-400">{c.departamento}</p>
-            </div>
-            <span class="mt-auto badge bg-slate-100 text-slate-400 border border-slate-200 self-start">
-              Próximamente
-            </span>
-          </div>
-        )
-      ))}
+    <!-- Ciudad disponible -->
+    <div class="mb-6">
+      <h2 class="text-lg font-bold text-navy mb-1">Ciudad disponible</h2>
+      <p class="text-sm text-slate-500">
+        Los datos vienen de{' '}
+        <a href="https://datos.gov.co" target="_blank" rel="noopener"
+           class="text-emerald-600 font-medium underline underline-offset-2 hover:opacity-80 transition-opacity">
+          datos.gov.co
+        </a>
+        , el portal de datos abiertos del Estado colombiano.
+      </p>
     </div>
+
+    <a
+      href={`${base}bucaramanga`}
+      class="card-hover group bg-white rounded-2xl border border-slate-100 shadow-sm p-6
+             flex items-center gap-5 mb-10 hover:border-emerald/30 transition-all"
+    >
+      <span class="text-5xl">🏔️</span>
+      <div class="flex-1 min-w-0">
+        <p class="text-xl font-bold text-navy group-hover:text-emerald transition-colors">Bucaramanga</p>
+        <p class="text-sm text-slate-400">Santander · Periodos 2021–2024</p>
+      </div>
+      <span class="shrink-0 badge bg-emerald/10 text-emerald-700 border border-emerald/20 font-bold">
+        Ver dashboard →
+      </span>
+    </a>
+
+    <!-- Cómo funciona -->
+    <div class="bg-slate-50 rounded-2xl border border-slate-100 p-6 mb-10">
+      <h3 class="text-base font-bold text-slate-700 mb-4">¿Cómo funciona?</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        {[
+          { n: '1', emoji: '🏛️', titulo: 'Fuente oficial', texto: 'Los datos vienen directamente de datos.gov.co, publicados por la alcaldía.' },
+          { n: '2', emoji: '🔍', titulo: 'Sin modificar', texto: 'Los valores no se alteran. Solo se organizan para leerlos más fácil.' },
+          { n: '3', emoji: '👥', titulo: 'Para todos', texto: 'Sin login, sin paywalls. Información pública para la ciudadanía.' },
+        ].map(({ n, emoji, titulo, texto }) => (
+          <div class="flex flex-col gap-2">
+            <span class="text-2xl">{emoji}</span>
+            <p class="text-sm font-bold text-slate-700">{titulo}</p>
+            <p class="text-sm text-slate-500 leading-snug">{texto}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <!-- Más ciudades -->
+    <div class="text-center py-4">
+      <p class="text-sm text-slate-400 leading-relaxed">
+        ¿Quieres ver tu ciudad?{' '}
+        <a href="https://datos.gov.co" target="_blank" rel="noopener"
+           class="text-slate-600 font-medium underline underline-offset-2 hover:text-navy transition-colors">
+          Los datos son públicos en datos.gov.co
+        </a>
+        {' '}y este proyecto es de código abierto.
+      </p>
+    </div>
+
   </main>
 
-  <footer class="border-t border-slate-100 py-8 px-6 text-center">
-    <p class="text-sm text-slate-400">
+  <footer class="border-t border-slate-100 py-6 px-6 text-center">
+    <p class="text-xs text-slate-400">
       Datos tomados de{' '}
       <a href="https://datos.gov.co" target="_blank" rel="noopener"
          class="underline underline-offset-2 hover:text-slate-600 transition-colors">

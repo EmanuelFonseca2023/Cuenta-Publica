@@ -19,6 +19,64 @@
   let periodoActual = $state(untrack(() => Object.keys(data.periodos).sort().at(-1) ?? ''));
 
   let periodo = $derived(periodoActual ? data.periodos[periodoActual] : null);
+
+  // ── Helpers de ingresos ──────────────────────────────────────────────────
+
+  // Orden importa: 'no tributario' ANTES de 'tributario'
+  const ESTILOS_INGRESO: {
+    key:   string;
+    dot:   string;
+    bg:    string;
+    title: string;
+    desc:  string;
+  }[] = [
+    {
+      key:   'no tributario',
+      dot:   'bg-emerald-500',
+      bg:    'bg-emerald-50/80 border-emerald-100',
+      title: 'text-emerald-800',
+      desc:  'Tasas, multas y derechos cobrados directamente por la alcaldía por servicios prestados.',
+    },
+    {
+      key:   'tributario',
+      dot:   'bg-navy',
+      bg:    'bg-blue-50/80 border-blue-100',
+      title: 'text-navy',
+      desc:  'Impuestos locales: predial (casas y lotes), industria y comercio, y vehículos.',
+    },
+    {
+      key:   'sistema general',
+      dot:   'bg-violet-600',
+      bg:    'bg-violet-50/80 border-violet-100',
+      title: 'text-violet-800',
+      desc:  'Participación constitucional del municipio en los ingresos del Estado colombiano.',
+    },
+    {
+      key:   'transferencia',
+      dot:   'bg-indigo-500',
+      bg:    'bg-indigo-50/80 border-indigo-100',
+      title: 'text-indigo-800',
+      desc:  'Recursos enviados desde el Gobierno Nacional para financiar servicios básicos.',
+    },
+    {
+      key:   'impuesto directo',
+      dot:   'bg-amber-500',
+      bg:    'bg-amber-50/80 border-amber-100',
+      title: 'text-amber-800',
+      desc:  'Gravámenes aplicados sobre renta o patrimonio de personas y empresas.',
+    },
+  ];
+
+  function estiloIngreso(categoria: string) {
+    const lower = categoria.toLowerCase();
+    for (const e of ESTILOS_INGRESO) {
+      if (lower.includes(e.key)) return e;
+    }
+    return {
+      dot: 'bg-slate-400', bg: 'bg-white border-slate-200',
+      title: 'text-slate-700', desc: '',
+    };
+  }
 </script>
 
 <div class="sticky-blur bg-navy/95 py-4 px-4 shadow-md border-b border-white/10 mb-10">
@@ -48,33 +106,34 @@
     <section class="bg-white rounded-3xl shadow-sm border border-slate-100 overflow-hidden">
       <div class="grid grid-cols-1 lg:grid-cols-2">
 
+        <!-- Gráfica -->
         <div class="p-6 lg:p-10 border-b lg:border-b-0 lg:border-r border-slate-100 flex flex-col justify-center">
           <div class="flex items-center gap-3 mb-4">
             <span class="text-4xl">💰</span>
             <h2 class="text-2xl lg:text-3xl font-bold text-navy">¿De dónde viene la plata?</h2>
           </div>
           <p class="text-base text-slate-500 mb-8 leading-relaxed">
-            El dinero llega de tres fuentes. Entender de dónde viene dice mucho sobre
+            El dinero llega de varias fuentes. Entender de dónde viene dice mucho sobre
             qué tan independiente es la ciudad.
           </p>
           <IngresosChart ingresos={periodo.ingresos} />
         </div>
 
-        <div class="p-6 lg:p-10 bg-slate-50/30 flex flex-col justify-center space-y-4">
+        <!-- Lista de categorías con explicación -->
+        <div class="p-6 lg:p-10 bg-slate-50/30 flex flex-col justify-center space-y-3">
           {#each periodo.ingresos.items as item}
-            {@const esNoTrib  = item.categoria.toLowerCase().includes('no tributario')}
-            {@const esTrib    = item.categoria.toLowerCase().includes('tributario') && !esNoTrib}
-            {@const bg        = esTrib ? 'bg-blue-50/80 border-blue-100'    : esNoTrib ? 'bg-emerald-50/80 border-emerald-100' : 'bg-white border-slate-200'}
-            {@const dot       = esTrib ? 'bg-navy'                          : esNoTrib ? 'bg-emerald-500'                      : 'bg-slate-400'}
-            {@const titleClr  = esTrib ? 'text-navy'                        : esNoTrib ? 'text-emerald-800'                    : 'text-slate-700'}
-            <div class="flex gap-4 p-5 rounded-2xl border {bg} hover:brightness-95 transition-all">
-              <div class="w-4 h-4 rounded-full {dot} mt-1 shrink-0 shadow-sm"></div>
-              <div>
-                <p class="text-base font-bold {titleClr}">{item.categoria}</p>
-                <p class="text-sm text-slate-600 mt-1">
+            {@const estilo = estiloIngreso(item.categoria)}
+            <div class="flex gap-4 p-5 rounded-2xl border {estilo.bg} hover:brightness-95 transition-all">
+              <div class="w-4 h-4 rounded-full {estilo.dot} mt-1 shrink-0 shadow-sm"></div>
+              <div class="min-w-0">
+                <p class="text-base font-bold {estilo.title}">{item.categoria}</p>
+                <p class="text-sm text-slate-600 mt-0.5">
                   {item.pct_del_total.toFixed(1)}% del total ·
                   {item.eficiencia_recaudo_pct.toFixed(0)}% de eficiencia
                 </p>
+                {#if estilo.desc}
+                  <p class="text-xs text-slate-400 mt-1 leading-snug">{estilo.desc}</p>
+                {/if}
               </div>
             </div>
           {/each}
